@@ -1,12 +1,9 @@
-/*
- * File:   ulti.c
- * Author: alpar
- *
- * Created on June 13, 2024, 6:36 PM
- */
+/*Authors: Bengisu Aydemir
+           Bilal Enes Söylemez
+           Muhammed Mustafa Kadayıfçı
+  Subject: Car Park Sensor Project with PIC16F877A */
 
-
-#define _XTAL_FREQ 20000000
+#define _XTAL_FREQ 8000000
 
 #define RS RD2
 
@@ -428,10 +425,10 @@ int main()
         Lcd_Print_Char(d3+'0');  
         
         if(distance < 5) {
-        Buzzer = 1;  // Buzzer'? s�rekli a�?k tut
+        Buzzer = 1;  // Buzzer'? sürekli aç?k tut
         } else if(distance <= 12) {
-        Buzzer = 1;  // Buzzer'? a�
-        __delay_ms(150); // Buzzer 150 milisaniye a�?k kals?n
+        Buzzer = 1;  // Buzzer'? aç
+        __delay_ms(150); // Buzzer 150 milisaniye aç?k kals?n
         Buzzer = 0;  // Buzzer'? kapat
         __delay_ms(75); // Buzzer 75 milisaniye kapal? kals?n
         }
