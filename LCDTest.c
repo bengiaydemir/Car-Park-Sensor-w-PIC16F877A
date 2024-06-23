@@ -62,9 +62,9 @@ void main(void)
     while(1)
     {
         lcd_command(0x83);
-        lcd_string("KRAL MUSTAFA",8);
+        lcd_string("KRAL MUSTAFA",12);
         lcd_command(0xC3);
-        lcd_string("TURKBOYLAR?",7);
-    }
-    return;
+        lcd_string("TURKBOYLARI",11);
+   Â }
+Â Â Â Â return;
 }
