@@ -1,9 +1,3 @@
-/*
- * File:   ulti.c
- * Author: alpar
- *
- * Created on June 13, 2024, 6:36 PM
- */
 
 
 #define _XTAL_FREQ 20000000
