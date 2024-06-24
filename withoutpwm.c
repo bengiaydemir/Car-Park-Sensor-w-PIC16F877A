@@ -1,11 +1,6 @@
-/*
- * File:   ulti.c
- * Author: alpar
- *
- * Created on June 13, 2024, 6:36 PM
- */
 
-#define _XTAL_FREQ 20000000 // 20 MHz osilatör frekans?
+
+#define _XTAL_FREQ 20000000 // 20 MHz osilatÃ¶r frekans?
 
 #define RS RD2
 #define EN RD3
@@ -193,7 +188,7 @@ int main() {
         Lcd_Print_Char(d3 + '0');
 
         if(distance <= 4) {
-            Buzzer = 1;  // Buzzer sürekli çalar
+            Buzzer = 1;  // Buzzer sÃ¼rekli Ã§alar
         } else if(distance <= 12) {
             int on_time = 150 - ((12 - distance) * 10); // 150ms ile 50ms aras?nda de?i?ir
             int off_time = 75 - ((12 - distance) * 5); // 75ms ile 25ms aras?nda de?i?ir
